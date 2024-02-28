@@ -1,0 +1,92 @@
+{
+  "expo": {
+    "name": "TeamGround",
+    "scheme": "tmgrnd",
+    "slug": "team-ground",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.6.26",
+    "orientation": "portrait",
+    "icon": "./assets/appIcon.png",
+    "splash": {
+      "image": "./assets/teamgroundsplash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.teamground",
+      "associatedDomains": [
+        "applinks:teamground.herokuapp.com"
+      ],
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "comgooglemaps",
+          "citymapper",
+          "uber",
+          "lyft",
+          "transit",
+          "truckmap",
+          "waze",
+          "yandexnavi",
+          "moovit",
+          "yandextaxi",
+          "yandexmaps",
+          "kakaomap",
+          "szn-mapy",
+          "mapsme",
+          "osmandmaps",
+          "gett",
+          "nmap",
+          "dgis",
+          "lftgpas"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.teamground",
+      "versionCode": 3
+    },
+    "description": "",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "TeamGround solicita permiso para que compartas tus fotos con la comunidad."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 33,
+            "buildToolsVersion": "33.0.0"
+          },
+          "ios": {
+            "deploymentTarget": "13.0"
+          }
+        }
+      ],
+      ["./plugins/android-manifest.plugin.js"]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8837b6a0-faf2-495c-9c35-a2e9b30097ed"
+      }
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#22343C",
+      "translucent": false
+    }
+  }
+}
